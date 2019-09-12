@@ -1,0 +1,13 @@
+{
+  "app": {
+    "lang": {
+      "cn": "Chinese",
+      "en": "English",
+      "switch-label": "select language: "
+    },
+    "title": "ng8 playground"
+  },
+  "heroes": {
+    "title": "{{name}} Details"
+  }
+}

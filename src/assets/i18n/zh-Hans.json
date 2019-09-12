@@ -1,0 +1,13 @@
+{
+  "app": {
+    "lang": {
+      "cn": "中文",
+      "en": "英文",
+      "switch-label": "选择语言："
+    },
+    "title": "ng8 演练场"
+  },
+  "heroes": {
+    "title": "{{name}} 详情"
+  }
+}
