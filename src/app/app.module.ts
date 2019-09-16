@@ -16,6 +16,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './services/in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarComponent } from './navbar/navbar.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MaterialMainComponent } from './material/material-main/material-main.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +33,9 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    NavbarComponent,
+    MaterialMainComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +52,14 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     AppRoutingModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
-    )
+    ),
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
